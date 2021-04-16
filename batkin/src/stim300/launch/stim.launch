@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="stim300" pkg="stim" type="stim_pub" output="screen">
+        <param name="device_id"  value="/dev/ttyUSB1"/>
+        <param name="topic_name" value="imu"/>
+        <param name="frame_id" value="imu_link" />
+    </node>
+</launch>

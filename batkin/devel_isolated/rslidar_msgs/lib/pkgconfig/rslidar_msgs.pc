@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/rslidar_msgs
+
+Name: rslidar_msgs
+Description: Description of rslidar_msgs
+Version: 1.0.0
+Cflags: -I/home/robot/batkin/devel_isolated/rslidar_msgs/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime std_msgs

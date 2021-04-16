@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/robot/batkin/devel_isolated/openslam_gmapping/lib;/opt/ros/kinetic/lib")

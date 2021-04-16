@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+c36de291007fad0f6893eac0051620f5 /home/robot/batkin/devel_isolated/freenect_camera/include/freenect_camera/FreenectConfig.h
+c908c5206e2e71e67dcce977a6cefe54 CMakeFiles/clean_test_results
+0a8b395d285aea00127f027ef09082c7 CMakeFiles/freenect_camera_gencfg

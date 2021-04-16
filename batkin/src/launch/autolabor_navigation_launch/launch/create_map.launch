@@ -1,0 +1,20 @@
+<launch>
+    <arg name="model" />
+    <arg name="gui" default="false" />
+
+    <param name="robot_description" textfile="$(find autolabor_description)/urdf/autolabor_pro1_box_suit.urdf" />
+    <param name="use_gui" value="$(arg gui)" />
+
+    <!-- 建图节点 -->
+    <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename one_laser_mapping.lua"
+      output="screen">
+    </node>
+    
+    <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros" type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find autolabor_navigation_launch)/rviz/create_map.rviz" />
+</launch>

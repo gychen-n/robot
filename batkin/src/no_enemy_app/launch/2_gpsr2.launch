@@ -1,0 +1,7 @@
+<launch>
+
+    <!--- Run map tools -->
+    <include file="$(find waterplus_map_tools)/launch/wpb_home_nav_test2.launch" />
+
+
+</launch>

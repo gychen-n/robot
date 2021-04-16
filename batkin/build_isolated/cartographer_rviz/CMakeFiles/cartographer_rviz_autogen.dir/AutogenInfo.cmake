@@ -1,0 +1,33 @@
+# Directories and files
+set(AM_CMAKE_BINARY_DIR "/home/robot/batkin/build_isolated/cartographer_rviz/")
+set(AM_CMAKE_SOURCE_DIR "/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/")
+set(AM_CMAKE_CURRENT_SOURCE_DIR "/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/")
+set(AM_CMAKE_CURRENT_BINARY_DIR "/home/robot/batkin/build_isolated/cartographer_rviz/")
+set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
+set(AM_BUILD_DIR "/home/robot/batkin/build_isolated/cartographer_rviz/cartographer_rviz_autogen")
+set(AM_SOURCES "/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/cartographer_rviz/drawable_submap.cc;/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/cartographer_rviz/ogre_slice.cc;/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/cartographer_rviz/submaps_display.cc")
+set(AM_HEADERS "/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/cartographer_rviz/drawable_submap.h;/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/cartographer_rviz/ogre_slice.h;/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz/cartographer_rviz/submaps_display.h")
+# Qt environment
+set(AM_QT_VERSION_MAJOR "5")
+set(AM_QT_MOC_EXECUTABLE "/usr/lib/x86_64-linux-gnu/qt5/bin/moc")
+set(AM_QT_UIC_EXECUTABLE )
+set(AM_QT_RCC_EXECUTABLE )
+# MOC settings
+set(AM_MOC_SKIP "")
+set(AM_MOC_DEFINITIONS "QT_NO_KEYWORDS;ROSCONSOLE_BACKEND_LOG4CXX;ROS_BUILD_SHARED_LIBS=1;ROS_PACKAGE_NAME=\"cartographer_rviz\"")
+set(AM_MOC_INCLUDES "/home/robot/batkin/build_isolated/cartographer_rviz/cartographer_rviz_autogen/include;/usr/include/x86_64-linux-gnu/qt5;/usr/include/x86_64-linux-gnu/qt5/QtWidgets;/usr/include/x86_64-linux-gnu/qt5/QtGui;/usr/include/x86_64-linux-gnu/qt5/QtCore;/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64;/home/robot/batkin/build_isolated/cartographer_rviz;/home/robot/batkin/src/mapping/cartographer_ros/cartographer_rviz;/usr/include/eigen3;/home/robot/batkin/src/mapping/cartographer_ros/cartographer_ros/.;/home/robot/batkin/devel_isolated/cartographer_ros_msgs/include;/opt/ros/kinetic/include;/opt/ros/kinetic/share/orocos_kdl/../../include;/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp;/usr/include/pcl-1.7;/usr/include/OGRE/Overlay;/usr/include/OGRE;/home/robot/batkin/devel_isolated/ceres-solver/include;/usr/include/lua5.2;/usr/include/cairo;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include/pixman-1;/usr/include/freetype2;/usr/include/libpng12;/usr/local/include;/home/robot/batkin/devel_isolated/cartographer/include;/usr/include")
+set(AM_MOC_OPTIONS "")
+set(AM_MOC_RELAXED_MODE "FALSE")
+set(AM_MOC_DEPEND_FILTERS "")
+set(AM_MOC_PREDEFS_CMD )
+# UIC settings
+set(AM_UIC_SKIP )
+set(AM_UIC_TARGET_OPTIONS )
+set(AM_UIC_OPTIONS_FILES )
+set(AM_UIC_OPTIONS_OPTIONS )
+set(AM_UIC_SEARCH_PATHS )
+# RCC settings
+set(AM_RCC_SOURCES  )
+set(AM_RCC_INPUTS )
+set(AM_RCC_OPTIONS_FILES )
+set(AM_RCC_OPTIONS_OPTIONS )

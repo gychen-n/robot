@@ -1,0 +1,25 @@
+<launch>
+
+    
+    <!--- Run xfyun -->
+    <node pkg="xfyun_waterplus" type="iat_node" name="xfyun_iat_node" output="screen">
+        <param name="en" type="bool" value="true"/> 
+    </node>
+    <node pkg="xfyun_waterplus" type="tts_node" name="xfyun_tts_node" /> 
+
+    <!--- Run whoiswho -->
+    <node pkg="no_enemy_app" type="whoiswho" name="whoiswho" output="screen"/>
+
+    <!-- Map tools  -->
+    <node pkg="waterplus_map_tools" type="wp_edit_node" name="wp_edit_node" output="screen">
+    <param name="load" type="string" value="/home/robot/waypoints.xml"/> 
+    </node>
+
+    <!-- Run sound_play -->
+    <arg name="device" default="" />
+    <node name="soundplay_node" pkg="sound_play" type="soundplay_node.py">
+      <param name="device" value="$(arg device)" />
+    </node>
+
+
+</launch>

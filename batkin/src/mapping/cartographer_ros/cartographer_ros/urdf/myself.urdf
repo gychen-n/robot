@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<robot name="wheeltec_robot">
+
+    <link name="base_link">
+        <visual>
+            <origin xyz=" 0.13 0 0" rpy="0 0 0" />
+            <geometry>
+                <box size="0.41 0.407 0.100"/>
+            </geometry>
+            <material name="white">
+                <color rgba="0 0 255 1"/>
+            </material>
+        </visual>
+    </link>   
+
+  <link name="rslidar">
+    <visual>
+      <origin xyz="0 0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.03" />
+      </geometry>
+      <material name="gray" />
+    </visual>
+  </link>
+
+
+  <joint name="laser_link_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="rslidar" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0" />
+  </joint>
+
+  <link name="imu_link">
+    <visual>
+      <origin xyz="0.0 0.0 0" />
+      <geometry>
+        <cylinder length="0.05" radius="0.03" />
+      </geometry>
+      <material name="gray" />
+    </visual>
+  </link>
+
+  <joint name="imu_link_joint" type="fixed">
+    <parent link="base_link" />
+    <child link="imu_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0" />
+  </joint>
+
+
+
+</robot>

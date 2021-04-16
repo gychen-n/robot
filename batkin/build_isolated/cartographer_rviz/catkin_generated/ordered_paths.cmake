@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/robot/batkin/devel_isolated/cartographer_ros/lib;/opt/ros/kinetic/lib")

@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/path_server
+
+Name: path_server
+Description: Description of path_server
+Version: 0.0.0
+Cflags: -I/home/robot/batkin/devel_isolated/path_server/include -I/home/robot/batkin/src/navigation/path_server/include
+Libs: -L${prefix}/lib 
+Requires: 

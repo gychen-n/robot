@@ -1,0 +1,19 @@
+<launch>
+
+
+    <!--- Run xfyun -->
+    <node pkg="xfyun_waterplus" type="iat_node" name="xfyun_iat_node" output="screen">
+        <param name="en" type="bool" value="false"/> 
+    </node>
+    <node pkg="xfyun_waterplus" type="tts_node" name="xfyun_tts_node" /> 
+
+    <!--- Run entrance_detect -->
+
+    <node pkg="no_enemy_app" type="gpsr" name="gpsr" output="screen"/>
+
+
+
+    <!-- Run sound_play -->
+    <node name="soundplay_node" pkg="sound_play" type="soundplay_node.py"/>
+
+</launch>

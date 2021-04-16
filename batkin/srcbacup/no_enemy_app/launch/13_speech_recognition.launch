@@ -1,0 +1,22 @@
+<launch>
+
+  <node pkg="wpb_home_apps" type="speech_recognition" name="speech_recognition" output="screen" />
+  
+    <!--- Run servers -->
+<include file="$(find wpb_home_behaviors)/launch/all_servers.launch" />
+
+    <!--- Run xfyun -->
+    <node pkg="xfyun_waterplus" type="iat_node" name="xfyun_iat_node" output="screen">
+        <param name="en" type="bool" value="false"/> 
+    </node>
+    <node pkg="xfyun_waterplus" type="tts_node" name="xfyun_tts_node" /> 
+
+    <!--- Run entrance_detect -->
+    <node pkg="wpb_home_apps" type="entrance_detect" name="entrance_detect"/>
+
+
+
+    <!-- Run sound_play -->
+    <node name="soundplay_node" pkg="sound_play" type="soundplay_node.py"/>
+
+</launch>

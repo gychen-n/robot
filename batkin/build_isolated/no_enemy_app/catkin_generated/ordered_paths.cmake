@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/robot/batkin/devel_isolated/waterplus_map_tools/lib;/opt/ros/kinetic/lib")

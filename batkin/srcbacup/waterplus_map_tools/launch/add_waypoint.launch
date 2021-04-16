@@ -1,0 +1,12 @@
+<launch>
+
+
+  
+
+
+  <!-- Map tools  -->
+  <node pkg="waterplus_map_tools" type="wp_edit_node" name="wp_edit_node" output="screen">
+    <param name="load" type="string" value="/home/robot/waypoints.xml"/> 
+  </node>
+
+</launch>

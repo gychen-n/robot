@@ -1,0 +1,41 @@
+<launch>
+    <arg name="model" />
+    <arg name="gui" default="false" />
+
+    <param name="robot_description" textfile="$(find autolabor_description)/urdf/myself.urdf" />
+    <param name="use_gui" value="$(arg gui)" />
+
+
+
+
+    
+
+   
+    <!-- 定位模块 -->
+    <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename revo_lds.lua
+          -load_state_filename $(find autolabor_navigation_launch)/map/mymap.pbstream"
+      output="screen">
+    </node>
+
+    <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros" type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+    <!-- 导航模块 -->
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+        <rosparam file="$(find autolabor_navigation_launch)/one_laser_navigation_param/move_base_params.yaml" command="load" />
+        <rosparam file="$(find autolabor_navigation_launch)/one_laser_navigation_param/global_costmap_params.yaml" command="load" ns="global_costmap"/>
+        <rosparam file="$(find autolabor_navigation_launch)/one_laser_navigation_param/local_costmap_params.yaml" command="load" ns="local_costmap"/>
+        <rosparam file="$(find autolabor_navigation_launch)/one_laser_navigation_param/global_planner_params.yaml" command="load" ns="GlobalPlanner"/>
+        <rosparam file="$(find autolabor_navigation_launch)/one_laser_navigation_param/teb_local_planner_params.yaml" command="load" ns="TebLocalPlannerROS"/>
+    </node>
+  <!-- Map tools  -->
+  <node pkg="waterplus_map_tools" type="wp_manager" name="wp_manager" output="screen">
+    <param name="load" type="string" value="/home/nvidia/waypoints.xml"/> 
+  </node>
+
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find autolabor_navigation_launch)/rviz/navigation_simulation.rviz" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+</launch>

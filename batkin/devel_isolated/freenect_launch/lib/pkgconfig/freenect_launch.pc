@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/freenect_launch
+
+Name: freenect_launch
+Description: Description of freenect_launch
+Version: 0.4.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

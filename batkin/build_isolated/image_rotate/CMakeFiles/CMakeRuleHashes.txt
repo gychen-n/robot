@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+16a663b94bb2c34f2ec14e348206a6d7 /home/robot/batkin/devel_isolated/image_rotate/include/image_rotate/ImageRotateConfig.h
+b15d16365891fad81b436dab14d110ac CMakeFiles/clean_test_results
+b9c34e1ffcbf659b33f7365ac5e318f3 CMakeFiles/image_rotate_gencfg

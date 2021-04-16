@@ -1,0 +1,20 @@
+<launch>
+
+
+
+     <!--- Run shopping -->
+    <node pkg="no_enemy_app" type="shopping" name="shopping" output="screen"/>
+
+
+
+    <!--- Run xfyun -->
+    <node pkg="xfyun_waterplus" type="iat_node" name="xfyun_iat_node" output="screen">
+        <param name="en" type="bool" value="true"/> 
+    </node>
+    <node pkg="xfyun_waterplus" type="tts_node" name="xfyun_tts_node" /> 
+
+
+    <!-- Run sound_play -->
+    <node name="soundplay_node" pkg="sound_play" type="soundplay_node.py"/>
+
+</launch>

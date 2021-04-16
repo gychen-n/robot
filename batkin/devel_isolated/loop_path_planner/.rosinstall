@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/robot/batkin/devel_isolated/loop_path_planner/setup.sh

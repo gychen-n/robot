@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/voxel_grid
+
+Name: voxel_grid
+Description: Description of voxel_grid
+Version: 1.16.2
+Cflags: -I/home/robot/batkin/src/navigation/voxel_grid/include
+Libs: -L${prefix}/lib -lvoxel_grid
+Requires: roscpp

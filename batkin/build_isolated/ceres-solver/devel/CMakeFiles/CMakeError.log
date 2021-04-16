@@ -1,0 +1,869 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_92267/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92267.dir/build.make CMakeFiles/cmTC_92267.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92267.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_92267.dir/CheckSymbolExists.c.o   -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_92267
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92267.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_92267.dir/CheckSymbolExists.c.o  -o cmTC_92267 -rdynamic 
+CMakeFiles/cmTC_92267.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_92267.dir/build.make:97: recipe for target 'cmTC_92267' failed
+make[1]: *** [cmTC_92267] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_92267/fast' failed
+make: *** [cmTC_92267/fast] Error 2
+
+File /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b0903/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b0903.dir/build.make CMakeFiles/cmTC_b0903.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0903.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b0903.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b0903
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0903.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b0903.dir/CheckFunctionExists.c.o  -o cmTC_b0903 -rdynamic -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_b0903.dir/build.make:97: recipe for target 'cmTC_b0903' failed
+make[1]: *** [cmTC_b0903] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b0903/fast' failed
+make: *** [cmTC_b0903/fast] Error 2
+
+
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5adfd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5adfd.dir/build.make CMakeFiles/cmTC_5adfd.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5adfd.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -fopenmp  -fopenmp   -o CMakeFiles/cmTC_5adfd.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_5adfd.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_5adfd.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_5adfd.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5adfd/fast' failed
+make: *** [cmTC_5adfd/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_af745/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af745.dir/build.make CMakeFiles/cmTC_af745.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_af745.dir/src.cxx.o
+/usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_af745.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_af745.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_af745.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_af745.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_af745/fast' failed
+make: *** [cmTC_af745/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43387/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43387.dir/build.make CMakeFiles/cmTC_43387.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_43387.dir/src.cxx.o
+/usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_43387.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_43387.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_43387.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_43387.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_43387/fast' failed
+make: *** [cmTC_43387/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4679c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4679c.dir/build.make CMakeFiles/cmTC_4679c.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4679c.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -fopenmp  -fopenmp   -o CMakeFiles/cmTC_4679c.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_4679c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4679c.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4679c.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4679c/fast' failed
+make: *** [cmTC_4679c/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8ed19/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ed19.dir/build.make CMakeFiles/cmTC_8ed19.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8ed19.dir/src.cxx.o
+/usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_8ed19.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_8ed19.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8ed19.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_8ed19.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8ed19/fast' failed
+make: *** [cmTC_8ed19/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_322c5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_322c5.dir/build.make CMakeFiles/cmTC_322c5.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_322c5.dir/src.cxx.o
+/usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_322c5.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_322c5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_322c5.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_322c5.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_322c5/fast' failed
+make: *** [cmTC_322c5/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7956f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7956f.dir/build.make CMakeFiles/cmTC_7956f.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7956f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -fopenmp  -fopenmp   -o CMakeFiles/cmTC_7956f.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_7956f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7956f.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_7956f.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7956f/fast' failed
+make: *** [cmTC_7956f/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_08e6f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_08e6f.dir/build.make CMakeFiles/cmTC_08e6f.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_08e6f.dir/src.cxx.o
+/usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_08e6f.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_08e6f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_08e6f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_08e6f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_08e6f/fast' failed
+make: *** [cmTC_08e6f/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2bd7c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2bd7c.dir/build.make CMakeFiles/cmTC_2bd7c.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2bd7c.dir/src.cxx.o
+/usr/bin/c++     -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_2bd7c.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_2bd7c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2bd7c.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2bd7c.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2bd7c/fast' failed
+make: *** [cmTC_2bd7c/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2dfaa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2dfaa.dir/build.make CMakeFiles/cmTC_2dfaa.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2dfaa.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_2dfaa.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_2dfaa.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2dfaa.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2dfaa.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2dfaa/fast' failed
+make: *** [cmTC_2dfaa/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1de57/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1de57.dir/build.make CMakeFiles/cmTC_1de57.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1de57.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_1de57.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_1de57.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1de57.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_1de57.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1de57/fast' failed
+make: *** [cmTC_1de57/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a923d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a923d.dir/build.make CMakeFiles/cmTC_a923d.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a923d.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_a923d.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_a923d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a923d.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a923d.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a923d/fast' failed
+make: *** [cmTC_a923d/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f0780/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f0780.dir/build.make CMakeFiles/cmTC_f0780.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f0780.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_f0780.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_f0780.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f0780.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_f0780.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f0780/fast' failed
+make: *** [cmTC_f0780/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a1c43/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1c43.dir/build.make CMakeFiles/cmTC_a1c43.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1c43.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_a1c43.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_a1c43.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a1c43.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a1c43.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a1c43/fast' failed
+make: *** [cmTC_a1c43/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_680be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_680be.dir/build.make CMakeFiles/cmTC_680be.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_680be.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_680be.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_680be.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_680be.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_680be.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_680be/fast' failed
+make: *** [cmTC_680be/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_32071/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32071.dir/build.make CMakeFiles/cmTC_32071.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_32071.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_32071.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_32071.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_32071.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_32071.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_32071/fast' failed
+make: *** [cmTC_32071/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1e68f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1e68f.dir/build.make CMakeFiles/cmTC_1e68f.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1e68f.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_1e68f.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_1e68f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1e68f.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_1e68f.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1e68f/fast' failed
+make: *** [cmTC_1e68f/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_319dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_319dc.dir/build.make CMakeFiles/cmTC_319dc.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_319dc.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_319dc.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_319dc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_319dc.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_319dc.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_319dc/fast' failed
+make: *** [cmTC_319dc/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2c5dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2c5dc.dir/build.make CMakeFiles/cmTC_2c5dc.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2c5dc.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_2c5dc.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_2c5dc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2c5dc.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_2c5dc.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2c5dc/fast' failed
+make: *** [cmTC_2c5dc/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cab74/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cab74.dir/build.make CMakeFiles/cmTC_cab74.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cab74.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_cab74.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_cab74.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_cab74.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_cab74.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cab74/fast' failed
+make: *** [cmTC_cab74/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_51d9b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_51d9b.dir/build.make CMakeFiles/cmTC_51d9b.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_51d9b.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_51d9b.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_51d9b.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_51d9b.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_51d9b.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_51d9b/fast' failed
+make: *** [cmTC_51d9b/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_42b09/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42b09.dir/build.make CMakeFiles/cmTC_42b09.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42b09.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_42b09.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_42b09.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_42b09.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_42b09.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_42b09/fast' failed
+make: *** [cmTC_42b09/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9ab1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9ab1.dir/build.make CMakeFiles/cmTC_a9ab1.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9ab1.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_a9ab1.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_a9ab1.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a9ab1.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_a9ab1.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a9ab1/fast' failed
+make: *** [cmTC_a9ab1/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b169a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b169a.dir/build.make CMakeFiles/cmTC_b169a.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b169a.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_b169a.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_b169a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_b169a.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_b169a.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_b169a/fast' failed
+make: *** [cmTC_b169a/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aaae9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aaae9.dir/build.make CMakeFiles/cmTC_aaae9.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_aaae9.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_aaae9.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_aaae9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_aaae9.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_aaae9.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_aaae9/fast' failed
+make: *** [cmTC_aaae9/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e1e90/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e1e90.dir/build.make CMakeFiles/cmTC_e1e90.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e1e90.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_e1e90.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_e1e90.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_e1e90.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_e1e90.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e1e90/fast' failed
+make: *** [cmTC_e1e90/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d4cfc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d4cfc.dir/build.make CMakeFiles/cmTC_d4cfc.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d4cfc.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_d4cfc.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_d4cfc.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_d4cfc.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_d4cfc.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d4cfc/fast' failed
+make: *** [cmTC_d4cfc/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1f4f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f4f5.dir/build.make CMakeFiles/cmTC_1f4f5.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1f4f5.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_1f4f5.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_1f4f5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_1f4f5.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_1f4f5.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1f4f5/fast' failed
+make: *** [cmTC_1f4f5/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3d512/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3d512.dir/build.make CMakeFiles/cmTC_3d512.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3d512.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_3d512.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_3d512.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3d512.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_3d512.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3d512/fast' failed
+make: *** [cmTC_3d512/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f4fae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4fae.dir/build.make CMakeFiles/cmTC_f4fae.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4fae.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_f4fae.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_f4fae.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f4fae.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_f4fae.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f4fae/fast' failed
+make: *** [cmTC_f4fae/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }
+Determining if the include file unordered_map exists failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ecc1d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ecc1d.dir/build.make CMakeFiles/cmTC_ecc1d.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ecc1d.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -fopenmp  -fopenmp   -o CMakeFiles/cmTC_ecc1d.dir/CheckIncludeFile.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+In file included from /usr/include/c++/5/unordered_map:35:0,
+                 from /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:
+/usr/include/c++/5/bits/c++0x_warning.h:32:2: error: #error This file requires compiler and library support for the ISO C++ 2011 standard. This support must be enabled with the -std=c++11 or -std=gnu++11 compiler options.
+ #error This file requires compiler and library support \
+  ^
+CMakeFiles/cmTC_ecc1d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_ecc1d.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_ecc1d.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ecc1d/fast' failed
+make: *** [cmTC_ecc1d/fast] Error 2
+
+
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_STD_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_71e4a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_71e4a.dir/build.make CMakeFiles/cmTC_71e4a.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_71e4a.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_STD_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_71e4a.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:34: error: ‘shared_ptr’ is not a member of ‘std’
+                                  std::shared_ptr<int> int_ptr;
+                                  ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:50: error: expected primary-expression before ‘int’
+                                  std::shared_ptr<int> int_ptr;
+                                                  ^
+CMakeFiles/cmTC_71e4a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_71e4a.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_71e4a.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_71e4a/fast' failed
+make: *** [cmTC_71e4a/fast] Error 2
+
+Source file was:
+#include <memory>
+                               int main() {
+                                 std::shared_ptr<int> int_ptr;
+                                 return 0;
+                               }
+Performing C++ SOURCE FILE Test HAVE_SHARED_PTR_IN_TR1_NAMESPACE failed with the following output:
+Change Dir: /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f6a15/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f6a15.dir/build.make CMakeFiles/cmTC_f6a15.dir/build
+make[1]: Entering directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f6a15.dir/src.cxx.o
+/usr/bin/c++    -fopenmp -DHAVE_SHARED_PTR_IN_TR1_NAMESPACE  -fopenmp   -o CMakeFiles/cmTC_f6a15.dir/src.cxx.o -c /home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:41: error: ‘std::tr1’ has not been declared
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                         ^
+/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp/src.cxx:3:57: error: expected primary-expression before ‘int’
+                                    std::tr1::shared_ptr<int> int_ptr;
+                                                         ^
+CMakeFiles/cmTC_f6a15.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_f6a15.dir/src.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_f6a15.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/robot/batkin/build_isolated/ceres-solver/devel/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f6a15/fast' failed
+make: *** [cmTC_f6a15/fast] Error 2
+
+Source file was:
+#include <memory>
+                                 int main() {
+                                   std::tr1::shared_ptr<int> int_ptr;
+                                   return 0;
+                                 }

@@ -1,0 +1,8 @@
+prefix=/home/xiaobot/dashgo_ws/devel
+
+Name: flashgo
+Description: Description of flashgo
+Version: 2.3.1
+Cflags: 
+Libs: -L/home/xiaobot/dashgo_ws/devel/lib 
+Requires: 

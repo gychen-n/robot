@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/robot/batkin/devel_isolated/turtlebot_rapps/setup.sh

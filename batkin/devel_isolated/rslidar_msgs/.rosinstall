@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/robot/batkin/devel_isolated/rslidar_msgs/setup.sh

@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/stim
+
+Name: stim
+Description: Description of stim
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

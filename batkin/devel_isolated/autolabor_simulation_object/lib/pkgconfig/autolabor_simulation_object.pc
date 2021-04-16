@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/autolabor_simulation_object
+
+Name: autolabor_simulation_object
+Description: Description of autolabor_simulation_object
+Version: 0.0.1
+Cflags: -I/home/robot/batkin/src/simulation/autolabor_simulation_object/include
+Libs: -L${prefix}/lib 
+Requires: 

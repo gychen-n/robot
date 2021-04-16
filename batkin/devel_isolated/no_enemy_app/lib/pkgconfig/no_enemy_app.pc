@@ -1,0 +1,8 @@
+prefix=/home/robot/batkin/devel_isolated/no_enemy_app
+
+Name: no_enemy_app
+Description: Description of no_enemy_app
+Version: 0.0.0
+Cflags: -I/home/robot/batkin/src/no_enemy_app/include
+Libs: -L${prefix}/lib 
+Requires: other_catkin_pkg
